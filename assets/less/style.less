@@ -1021,11 +1021,17 @@ a{
 .img-content-banner{
     .flex;
     margin: 0 -10px;
+    @media(max-width: 575px){
+        margin: -10px;
+    }
     .items{
         position: relative;
         border-radius: 12px;
         overflow: hidden;
         margin: 0 10px;
+        @media(max-width: 575px){
+            margin: 10px;
+        }
         .img-banner{
             height: 100%;
             img{
