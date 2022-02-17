@@ -857,7 +857,8 @@ a{
             .add-to-links{
                 position: absolute;
                 top: 4rem;
-                right: 3rem;
+                right: 0;
+                left: 0;
                 z-index: 2;
                 flex-wrap: wrap;
                 display: -webkit-box;
@@ -866,8 +867,8 @@ a{
                 display: -webkit-flex;
                 display: flex;
                 align-items: center;
-                // flex-direction: column;
                 opacity: 0;
+                justify-content: center;
                 .action{
                     width: 2.5rem;
                     height: 1.5rem;
@@ -914,7 +915,7 @@ a{
 
                 }
                 a{
-                    margin-left: 2px;
+                    margin-left: 16px;
                 }
                 a:hover::before{
                     background: @cl-hover;
