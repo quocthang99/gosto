@@ -51,7 +51,7 @@ a{
     .top-menu{
         .flex;
         .menu{
-            border-left: 1px solid #e7eaef;
+            border-left: 1px solid @color-border;
             margin-left: 2rem;
             padding-left: 2rem;
             a{
@@ -79,7 +79,7 @@ a{
                 content: "\e9b9";
                 font-family: 'icon-dukamarket';
                 font-size: 2.4rem;
-                color: #09432b;
+                color: @text-color-header;
                 margin-right: 2rem;
             }
         }
@@ -107,7 +107,7 @@ a{
                 font-size: 1.2rem
             }
             a{
-                color: #09432b;
+                color: @text-color-header;
                 font-size: 1.4rem
             }
         }
@@ -117,11 +117,11 @@ a{
             }
             .flex;
             margin-left: 2rem;
-            border: 2px solid #e7eaef;
+            border: 2px solid @color-border;
             align-items: center;
             padding-left: 2rem;
             font-size: 1.4rem;
-            color: #09432b;
+            color: @text-color-header;
             flex: 1;
             margin-right: 6%;
             align-items: center;
@@ -154,8 +154,8 @@ a{
             .field-by-cat-search{
                 a{
                     
-                    color: #09432b;
-                    border-right: 1px solid #e1e1e1;
+                    color: @text-color-header;
+                    border-right: 1px solid @color-bottom;
                     padding-right: 2rem;
                     margin-right: 2rem;
                     display: flex;
@@ -177,19 +177,19 @@ a{
             content: "\e91a";
             font-family: 'icon-dukamarket';
             font-size: 2.6rem;
-            color: #09432b;
+            color: @text-color-header;
         }
         .wishlist::before{
             content: "\e910";
             font-family: 'icon-dukamarket';
             font-size: 2.6rem;
-            color: #09432b;
+            color: @text-color-header;
         }
         .cart::before{
             content: "\e917";
             font-family: 'icon-dukamarket';
             font-size: 2.6rem;
-            color: #09432b;
+            color: @text-color-header;
         }
         .user{
             .flex; 
@@ -218,7 +218,7 @@ a{
                 border-radius: 50%;
                 // font-size: 1rem;
                 line-height: 1.2rem;
-                color: #FFFFFF;
+                color: @white;
                 font-size: 1.2rem;
             }
         }
@@ -231,18 +231,18 @@ a{
             }
             .name{
                 font-size: 1.3rem;
-                color: #707b91;
+                color: @color-qty;
             }
             .text{
                 font-size: 1.4rem;
-                color: #09432b;
+                color: @text-color-header;
             }
         }
     }
 }
 
 .header-menu-center-vertical{
-    border-top: 1px solid #e7eaef;
+    border-top: 1px solid @color-border;
     .content-center-menu{
         .flex;
         padding: 1.1rem 0;
@@ -256,12 +256,12 @@ a{
             margin-right: 3rem;
             position: relative;
             .title-category-dropdown{
-                border-right: 1px solid #e7eaef;
+                border-right: 1px solid @color-border;
                 font-size: 1.4rem;
                 text-transform: uppercase;
                 display: flex;
                 align-items: center;
-                color: #09432b;
+                color: @text-color-header;
                 font-weight: 500;
                 cursor: pointer;
                 margin-left: 3rem;
@@ -276,7 +276,7 @@ a{
             .verticalmenu{
                 width: 100%;
                 height: auto;
-                background: #fff;
+                background: @white;
                 position: absolute;
                 z-index: 3;
                 top: calc(100% + 1.3rem);
@@ -284,9 +284,9 @@ a{
                 padding-left: 2rem;
                 .list-verticalmenu{
                     .item-verticalmenu{
-                        border-bottom: 1px solid #e1e1e1;
+                        border-bottom: 1px solid @color-bottom;
                         text-decoration: none;
-                        color: #222;
+                        color: @black;
                         font-weight: 500;
                         line-height: 2.7;
                         padding-bottom: 6px;
@@ -310,7 +310,7 @@ a{
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 position: absolute;
-                background: #fff;
+                background: @white;           
                 width: 67vw;
                 left: 100%;
                 top: 0;
@@ -346,7 +346,7 @@ a{
                     .name{
                         text-decoration: none;
                         font-weight: 600;
-                        color: #222;
+                        color: @black;
                     }
                     .submenu-items{
                         padding-top: 1.5rem;
@@ -385,14 +385,14 @@ a{
                 a{
                     font-size: 1.4rem;
                     text-transform: uppercase;
-                    color: #09432b;
+                    color: @text-color-header;
                     font-weight: 500;
                 }
                 a:hover{
                     color: @cl-hover;
                 }
                 span{
-                    color: #09432b;
+                    color: @text-color-header;
                 }
                 .submenu{
                     display: flex;
@@ -400,19 +400,19 @@ a{
                     left: 0;
                     width: 100%;
                     /* height: 15rem; */
-                    background: #fff;
+                    background: @white;                
                     visibility: hidden;
                     position: absolute;
                     opacity: 0;
                     z-index: 3;
                     top: calc(100% + 0px);
                     transition: 0.3s;
-                    webkit-box-shadow: 800px;
-                    -webkit-box-shadow: 800px 0 #fff, -800 0 #fff;
-                    -moz-box-shadow: 800px 0 #fff, -800 0 #fff;
-                    -ms-box-shadow: 800px 0 #fff, -800 0 #fff;
-                    box-shadow: 800px 0 #fff, -800 0 #fff;
-                    .ui-menu-item{
+                    // webkit-box-shadow: 800px;
+                    // -webkit-box-shadow: 800px 0 @white800 0 @white;               
+                    //  -moz-box-shadow: 800px 0 @white800 0 @white;              
+                    //    -ms-box-shadow: 800px 0 @white800 0 @white;                  
+                    //     box-shadow: 800px 0 @white800 0 @white;               
+                        .ui-menu-item{
                         position: static;
                         padding: 2rem 0;
                         .cate{
@@ -488,7 +488,7 @@ a{
         }
         span{
             font-size: 5rem;
-            color: #fbb805;
+            color: @color-span;
             @media(max-width: 1200px){
                 font-size: 4rem;
             }
@@ -535,7 +535,7 @@ a{
         .buttom-wap{
             a{
                 text-decoration: none;
-                color: #09432b;
+                color: @text-color-header;
                 font-weight: 500;
                 background: @white;
                 padding: 1.6rem 5rem;
@@ -557,7 +557,7 @@ a{
     margin-bottom: 60px;
 }
 .section-full-main{
-    background: #f3f6f1;
+    background: @color-backgroud-full;
 }
 
 .items-thumb-content{
@@ -591,13 +591,13 @@ a{
             }
             .name{
                 font-size: 1.4rem;
-                color: #09432b;
+                color: @text-color-header;
                 font-weight: 500;
                 margin-bottom: 1rem;
             }
             .qty-items{
                 font-size: 1.3rem;
-                color: #707b91;
+                color: @color-qty;
             }
         }
     }
@@ -639,7 +639,7 @@ a{
         line-height: 1;
         .title{
             font-size: 2.4rem;
-            color: #09432b;
+            color: @text-color-header;
             font-weight: 500;
             margin-right: 2rem;
             @media(max-width: 575px){
@@ -651,9 +651,9 @@ a{
     .super-deal-countdown{
         span{
             font-size: 1.4rem;
-            color: #fff;
+            color: @white;
             font-weight: 600;
-            background: #ee0505;
+            background: @color-label;
             padding: 0.8rem 1.6rem;
             border-radius: 2rem;
             margin-right: 2rem;
@@ -663,7 +663,7 @@ a{
         }
     }
     .hr{
-        border-bottom: 1px solid #c4ced9;
+        border-bottom: 1px solid @color-boder-main;
         line-height: 0.1em;
         margin: 0.35em 0 0.35em;
         flex: 1;
@@ -675,8 +675,8 @@ a{
             background: @white;
             padding: 0.8rem;
             border-radius: 50%;
-            color: #c4ced9;
-            border: 1px solid #c4ced9;
+            color: @color-boder-main;
+            border: 1px solid @color-boder-main;
             @media(max-width: 575px){
                 padding: 0.6rem;
             }
@@ -704,17 +704,17 @@ a{
         .cate{
             margin-left: 1rem;
             a{
-                background: #fff;
+                background: @white;               
                 padding: 0.9rem 1.8rem;
                 border-radius: 2rem;
                 font-size: 1.3rem;
-                border: 1px solid #c4ced9;
-                color: #7d879c;
+                border: 1px solid @color-boder-main;
+                color: @color-active;
                 text-decoration: none;
             }
             a:hover{
                 background: @cl-hover;
-                color: #fff;
+                color: @white;            
                 border: 1px solid @cl-hover;
             }
         }
@@ -732,7 +732,7 @@ a{
         }
         cursor: pointer;
         position: relative;
-        background: #fff;
+        background: @white;
         padding-bottom: 1.7rem;
         border-radius: 10px;
         margin: 0 1rem;
@@ -742,191 +742,22 @@ a{
             left: 0;
             padding: 2rem;
             .value{
-                background: #5aab19;
+                background: @green;
                 padding: 0.1rem 0.8rem;
-                color: #fff;
+                color: @white;               
                 border-radius: 3px;
                 font-size: 1.4rem;
             }
             .hot{
-                background: #fe3638;
+                background: @active;
                 padding: 0.1rem 1.4rem;
-                color: #fff;
+                color: @white;               
                 border-radius: 3px;
                 margin-left: 1px;
                 font-size: 1.4rem;
             }
         }
-        .content{
-            padding: 0 2rem;
-            .name-product{
-                margin-bottom: 8px;
-                a{
-                    color: #0062bd;
-                    font-size: 1.4rem;
-                    font-weight: 500;
-                }
-            }
-            .rating{
-                margin-bottom: 1.5rem;
-                @media(max-width: 767px){
-                    display: none;
-            }
-                .rating-star::before{
-                    content: '\ea02' '\ea02' '\ea02' '\ea02' '\ea02';
-                    font-family: 'icon-dukamarket';
-                    color: #f90;
-                    font-size: 1.4rem;
-                }
-                .number{
-                    font-size: 1.2rem;
-                    color: #99a2b5;
-                }
-            }
-            
-            .special-price{
-                margin-bottom: 1.8rem;
-                display: flex;
-                font-size: 1.6rem;
-                .sale-price{
-                    color: @cl-hover;
-                    font-weight: 500;
-                    margin-right: 1.5rem;
-                }
-                .price{
-                    text-decoration: line-through;
-                    color: #99a2b5;
-                    @media(max-width: 575px){
-                        display: none;
-                    }
-                }
-            }
-            .product-sold{
-                .ruler-sold{
-                    margin-bottom: 9px;
-                    background: #ebebeb;
-                    height: 8px;
-                    width: 90%;
-                    border-radius: 2rem;
-                    .ruler-sold-count{
-                        background: #f01905;
-                        width: 45%;
-                        height: 8px;
-                        border-radius: 2rem;
-                    }
-                }
-                .count-sold{
-                    font-size: 1.4rem;
-                    color: #3e445a;
-                }
-            }
-            .add-cart{
-                opacity: 0;
-                position: absolute;
-                left: 0;
-                right: 0;
-                width: auto;
-                padding: 1.1rem 2rem 1rem;
-                background-color: #fff;
-                border-bottom-right-radius: 1.2rem;
-                border-bottom-left-radius: 1.2rem;
-                -webkit-transition: all .3s ease;
-                -moz-transition: all .3s ease;
-                -ms-transition: all .3s ease;
-                transition: all .3s ease;
-                -webkit-transform: translateY(1.5rem);
-                -moz-transform: translateY(1.5rem);
-                -ms-transform: translateY(1.5rem);
-                transform: translateY(1.5rem);
-                pointer-events: none;
-                a{
-                    text-transform: uppercase;
-                    background: @cl-hover;
-                    border-radius: 2rem;
-                    color: #fff;
-                    width: 100%;
-                    display: block;
-                    text-align: center;
-                    padding: 1.2rem 5px;
-                    font-size: 1.3rem;
-                }   
-                @media(max-width: 1199px){
-                    display: none;
-            }
-            }
-            .add-to-links{
-                position: absolute;
-                top: 4rem;
-                right: 0;
-                left: 0;
-                z-index: 2;
-                flex-wrap: wrap;
-                display: -webkit-box;
-                display: -moz-box;
-                display: -ms-flexbox;
-                display: -webkit-flex;
-                display: flex;
-                align-items: center;
-                opacity: 0;
-                justify-content: center;
-                .action{
-                    width: 2.5rem;
-                    height: 1.5rem;
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 4rem;
-                    -webkit-transform: translateY(100%);
-                    -moz-transform: translateY(100%);
-                    -ms-transform: translateY(100%);
-                    transform: translateY(100%);
-                    -webkit-transition: all .5s;
-                    -moz-transition: all .5s;
-                    -ms-transition: all .5s;
-                    transition: all .5s;
-                }
-                .towishlist::before{
-                    content: "\e980";
-                    font-family: 'icon-dukamarket';
-                    background: #f5f5f5;
-                    font-size: 1.4rem;
-                    padding: 10px;
-                    border-radius: 50%;
-                    color: #666;
-                }
-                
-                .tocompare::before{
-                    content: "\e99e";
-                    font-family: 'icon-dukamarket';
-                    background: #f5f5f5;
-                    font-size: 1.4rem;
-                    padding: 10px;
-                    border-radius: 50%;
-                    color: #666;
-                }
-                .link-quickview::before{
-                    content: "\e99e";
-                    font-family: 'icon-dukamarket';
-                    background: #f5f5f5;
-                    font-size: 1.4rem;
-                    padding: 10px;
-                    border-radius: 50%;
-                    color: #666;
-
-                }
-                a{
-                    margin-left: 16px;
-                }
-                a:hover::before{
-                    background: @cl-hover;
-                    color: @white
-                }
-                @media(max-width: 1199px){
-                        display: none;
-                }
-
-            }
-        }
+        
     }
     @media(min-width: 992px)and(max-width: 1236px){
         .items6{
@@ -1066,7 +897,7 @@ a{
                 }
             }
             h5:hover{
-                color: #ffd800;
+                color: @yellow;
             }
             h2{
                 font-size: 2.4rem;
@@ -1148,7 +979,7 @@ a{
             }
         }
         display: flex;
-        background: #fff;
+        background: @white;       
         // align-items: center;
         border-radius: 10px;
         position: relative;
@@ -1158,103 +989,22 @@ a{
             top: 0;
             left: 0;
             .value{
-                background: #5aab19;
+                background: @green;
                 padding: 1px 8px;
-                color: #fff;
+                color: @white;               
                 border-radius: 3px;
                 font-size: 1.4rem;
             }
             .hot{
-                background: #fe3638;
+                background: @active;
                 padding: 1px 1.4rem;
-                color: #fff;
+                color: @white;               
                 border-radius: 3px;
                 margin-left: 1px;
                 font-size: 1.4rem;
             }
         }
-        .content{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 0 1.8rem;
-            @media(max-width: 1199px){
-                padding: 0 1rem;
-            }
-            .name-pro{
-                margin-bottom: 6px;
-                a{
-                    text-decoration: none;
-                    color: #0062bd;
-                    font-weight: 600;
-                    font-size: 1.4rem;
-                    margin-bottom: 6px;
-                }
-            }
-            .rating{
-                margin-bottom: 1.5rem;
-                .flex;
-                align-items: center;
-                .rating-star::before{
-                    content: '\ea02' '\ea02' '\ea02' '\ea02' '\ea02';
-                    font-family: 'icon-dukamarket';
-                    color: #f90;
-                    font-size: 1.4rem;
-                }
-                .number{
-                    color: #99a2b5;
-                    font-size: 1.2rem;
-                    @media(max-width: 575px){
-                        display: none;
-                    }
-                   
-                }
-            }
-            .special-price{
-                margin-bottom: 2.5rem;
-                .flex;
-                .sale-price{
-                    margin-right: 1.5rem;
-                    color: @cl-hover;
-                    font-weight: 600;
-                    font-size: 1.6rem;
-                }
-                .price{
-                    color: #99a2b5;
-                    font-size: 1.6rem;
-                    text-decoration: line-through;
-                    @media(max-width: 575px){
-                        display: none;
-                    }
-                }
-            }
-            .des{
-                margin-bottom: 3rem;
-                font-size: 1.4rem;
-                color: #3e445a;
-                line-height: 2;
-                @media(max-width: 1300px){
-                    display: none;
-                }
-            }
-            .add-cart{
-                @media(max-width: 1199px){
-                    display: none;
-                }
-                .submit{
-                    background: @cl-hover;
-                    border: 0 solid @cl-hover;
-                    border-radius: 2rem;
-                    color: #fff;
-                    text-transform: uppercase;
-                    font-weight: 600;
-                    padding: 1.2rem 11rem;
-                    @media(max-width: 1400px){
-                        padding: 8px 4rem;
-                    }
-                }
-            }
-        }
+        
     }
     .items1{
         grid-column: 1 / 3;
@@ -1372,7 +1122,7 @@ a{
         }
         h2{
             font-size: 2.4rem;
-            color: #09432b;
+            color: @text-color-header;
             margin-bottom: 2.2rem;
             @media(max-width: 575px){
                 text-align: center;
@@ -1391,7 +1141,7 @@ a{
         
         .newsletter-form{
             .flex;
-            background: #fff;
+            background: @white;           
             padding: 4px 4px 4px 10px;
             width: 35%;
             border-radius: 3rem;
@@ -1411,13 +1161,13 @@ a{
             padding: 1.2rem 2.6rem;
             background: @cl-hover;
             border: none;
-            color: #FFFFFF;
+            color: @white;
             font-size: 1.3rem;
             border-radius: 2rem;
         }
         .active{
             font-size: 1.4rem;
-            color: #7d879c;
+            color: @color-active;
             @media (max-width: 1199px){
                 display: none;
             }
@@ -1453,7 +1203,7 @@ a{
                 margin-bottom: 1.3rem;
                 a{
                     font-size: 1.8rem;
-                    color: #09432b;
+                    color: @text-color-header;
                     font-weight: 500;
                     
                 }
@@ -1468,7 +1218,7 @@ a{
                 text-transform: uppercase;
                 font-size: 1.2rem;
                 .name{
-                    color: #7d879c;
+                    color: @color-active;
                     @media (max-width: 575px){
                         display: none;
                     }
@@ -1497,7 +1247,7 @@ a{
     }
 }
 footer{
-    background: #1f222f;
+    background: @bg-dark;
 }
 .footer-contact{
     .flex;
@@ -1522,7 +1272,7 @@ footer{
         }
         
         i{
-            color: #9ea4b4;
+            color: @color-header-topbar;
             font-size: 3rem;
         }
         .content{
@@ -1535,7 +1285,7 @@ footer{
             }
             p{
                 font-size: 1.4rem;
-                color: #9ea4b4;
+                color: @color-header-topbar;
             }
         }
     }
@@ -1552,7 +1302,7 @@ footer{
 
         
         .shipping-support{
-            background: #292b2f;
+            background: @border-dark;
             flex-direction: initial;
             padding: 10px 10px 0;
             align-items: flex-start;
@@ -1615,7 +1365,7 @@ footer{
                                 margin-bottom: 1px;
                                 .call{
                                     font-size: 1.4rem;
-                                    color: #9ea4b4;
+                                    color: @color-header-topbar;
                                 }
                                 .phone{
                                     font-size: 2.4rem;
@@ -1625,7 +1375,7 @@ footer{
                         }
                         p{
                             font-size: 1.4rem;
-                            color: #9ea4b4;
+                            color: @color-header-topbar;
                             line-height: 2;
                         }
                     }
@@ -1649,7 +1399,7 @@ footer{
                     font-size: 1.4rem;
                     margin-bottom: 1.5rem;
                     a{
-                        color: #9ea4b4;
+                        color: @color-header-topbar;
                     }
                     a:hover{
                         color: @cl-hover;
@@ -1667,7 +1417,7 @@ footer{
             }
             p{
                 font-size: 1.4rem;
-                color: #9ea4b4;
+                color: @color-header-topbar;
                 line-height: 1.3;
                 margin-bottom: 2.4rem
             }
@@ -1680,7 +1430,7 @@ footer{
                 .flex;
                 align-items: center;
                 font-size: 1.4rem;
-                color: #9ea4b4;
+                color: @color-header-topbar;
                 .coupon{
                     color: @cl-hover;
                     padding: 0 5px;
@@ -1693,7 +1443,7 @@ footer{
     }
 }
 .footer-bottom{
-    color: #999;
+    color: @gray;
         .footer-content-center{
             padding: 5.6rem 0;
             border-top: 1px solid rgba(255, 255, 255, 0.1);
@@ -1714,7 +1464,7 @@ footer{
                         margin-left: 1.4rem;
                         a{
                             text-decoration: none;
-                            color: #999;
+                            color: @gray;
                             font-size: 1.2rem;
                             text-transform: uppercase;
                         }
@@ -1734,4 +1484,213 @@ footer{
 
             }
         }
+}
+
+.content-selling{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 1.8rem;
+    @media(max-width: 1199px){
+        padding: 0 1rem;
+    }
+    .des{
+        margin-bottom: 3rem;
+        font-size: 1.4rem;
+        color: @color-descreiption;
+        line-height: 2;
+        @media(max-width: 1300px){
+            display: none;
+        }
+    }
+    .add-cart1{
+        opacity: 1;
+        @media(max-width: 1199px){
+            display: none;
+        }
+        .submit1{
+            
+            background: @cl-hover;
+            border: 0 solid @cl-hover;
+            border-radius: 2rem;
+            color: @white;
+            text-transform: uppercase;
+            font-weight: 600;
+            padding: 1.2rem 16rem;
+            @media(max-width: 1400px){
+                padding: 8px 4rem;
+            }
+        }
+    }
+}
+
+.content{
+    padding: 0 2rem;
+    .name-product{
+        margin-bottom: 8px;
+        a{
+            color: @blue;
+            font-size: 1.4rem;
+            font-weight: 500;
+        }
+    }
+    .rating{
+        margin-bottom: 1.5rem;
+        @media(max-width: 767px){
+            display: none;
+    }
+        .rating-star::before{
+            content: '\ea02' '\ea02' '\ea02' '\ea02' '\ea02';
+            font-family: 'icon-dukamarket';
+            color: @color-icon-rating;
+            font-size: 1.4rem;
+        }
+        .number{
+            font-size: 1.2rem;
+            color: @color-number;
+        }
+    }
+    
+    .special-price{
+        margin-bottom: 1.8rem;
+        display: flex;
+        font-size: 1.6rem;
+        .sale-price{
+            color: @cl-hover;
+            font-weight: 500;
+            margin-right: 1.5rem;
+        }
+        .price{
+            text-decoration: line-through;
+            color: @color-number;
+            @media(max-width: 575px){
+                display: none;
+            }
+        }
+    }
+    .product-sold{
+        .ruler-sold{
+            margin-bottom: 9px;
+            background: @white;
+            height: 8px;
+            width: 90%;
+            border-radius: 2rem;
+            .ruler-sold-count{
+                background: @color-label;
+                width: 45%;
+                height: 8px;
+                border-radius: 2rem;
+            }
+        }
+        .count-sold{
+            font-size: 1.4rem;
+            color: @color-descreiption;
+        }
+    }
+    .add-cart{
+        opacity: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: auto;
+        padding: 1.1rem 2rem 1rem;
+        background-color: @white;               
+        border-bottom-right-radius: 1.2rem;
+        border-bottom-left-radius: 1.2rem;
+        -webkit-transition: all .3s ease;
+        -moz-transition: all .3s ease;
+        -ms-transition: all .3s ease;
+        transition: all .3s ease;
+        -webkit-transform: translateY(1.5rem);
+        -moz-transform: translateY(1.5rem);
+        -ms-transform: translateY(1.5rem);
+        transform: translateY(1.5rem);
+        pointer-events: none;
+        a{
+            text-transform: uppercase;
+            background: @cl-hover;
+            border-radius: 2rem;
+            color: @white;                   
+            width: 100%;
+            display: block;
+            text-align: center;
+            padding: 1.2rem 5px;
+            font-size: 1.3rem;
+        }   
+        @media(max-width: 1199px){
+            display: none;
+    }
+    }
+    .add-to-links{
+        position: absolute;
+        top: 4rem;
+        right: 0;
+        left: 0;
+        z-index: 2;
+        flex-wrap: wrap;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        align-items: center;
+        opacity: 0;
+        justify-content: center;
+        .action{
+            width: 2.5rem;
+            height: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4rem;
+            -webkit-transform: translateY(100%);
+            -moz-transform: translateY(100%);
+            -ms-transform: translateY(100%);
+            transform: translateY(100%);
+            -webkit-transition: all .5s;
+            -moz-transition: all .5s;
+            -ms-transition: all .5s;
+            transition: all .5s;
+        }
+        .towishlist::before{
+            content: "\e980";
+            font-family: 'icon-dukamarket';
+            background: @white;
+            font-size: 1.4rem;
+            padding: 10px;
+            border-radius: 50%;
+            color: #666;
+        }
+        
+        .tocompare::before{
+            content: "\e99e";
+            font-family: 'icon-dukamarket';
+            background: @white;
+            font-size: 1.4rem;
+            padding: 10px;
+            border-radius: 50%;
+            color: #666;
+        }
+        .link-quickview::before{
+            content: "\e99e";
+            font-family: 'icon-dukamarket';
+            background: @white;
+            font-size: 1.4rem;
+            padding: 10px;
+            border-radius: 50%;
+            color: #666;
+
+        }
+        a{
+            margin-left: 1.6rem;
+        }
+        a:hover::before{
+            background: @cl-hover;
+            color: @white
+        }
+        @media(max-width: 1199px){
+                display: none;
+        }
+
+    }
 }
