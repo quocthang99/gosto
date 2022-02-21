@@ -67,12 +67,33 @@
                                     <a href="">San Francisco
                                         <span class="icon-chevron-down"></span>
                                     </a>
+
                                 </div>
                                 <div class="search-form">
                                     <div class="field-by-cat-search">
-                                        <a href="">All Categories
+                                        <h3 class="header-category">All Categories
                                             <span class="icon-chevron-down"></span>
-                                        </a>
+                                        </h3>
+                                        <ul class="verticalmenu">
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Top Deals</a>
+                                            </li>
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Top Selling</a>
+                                            </li>
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Cameras</a>
+                                            </li>
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Computer</a>
+                                            </li>
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Mobile Phone</a>
+                                            </li>
+                                            <li class="list-verticalmenu">
+                                                <a href="" class="item-verticalmenu">Kitchen</a>
+                                            </li>
+                                        </ul>
                                     </div>
                                     <div class="field-search">
                                         <input type="search" class="control" placeholder="Search entire store here...">
@@ -1474,6 +1495,10 @@
     <script src="https://cdn.jsdelivr.net/npm/less@4.1.1"></script>
     <script>
         $(".title-category-dropdown").click(function() {
+            $(this).next().slideToggle("normal");
+            $(this).toggleClass("hide");
+        });
+        $(".header-category").click(function() {
             $(this).next().slideToggle("normal");
             $(this).toggleClass("hide");
         });
