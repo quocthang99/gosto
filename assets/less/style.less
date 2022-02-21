@@ -271,7 +271,8 @@ a{
                 }
             }
             .title-category-dropdown:hover{
-                color: @cl-hover;
+                color: @white;
+                
             }
             .verticalmenu{
                 width: 100%;
@@ -279,7 +280,7 @@ a{
                 background: @white;
                 position: absolute;
                 z-index: 3;
-                top: calc(100% + 1.3rem);
+                top: calc(100% + 1.1rem);
                 display: none;
                 padding-left: 2rem;
                 .list-verticalmenu{
@@ -290,6 +291,7 @@ a{
                         font-weight: 500;
                         line-height: 2.7;
                         padding-bottom: 6px;
+                        font-size: 14px;
                     }
                     .item-verticalmenu:hover{
                         color: @cl-hover;
@@ -347,6 +349,7 @@ a{
                         text-decoration: none;
                         font-weight: 600;
                         color: @black;
+                        font-size: 14px;
                     }
                     .submenu-items{
                         padding-top: 1.5rem;
@@ -362,9 +365,12 @@ a{
                     }
                 }
             }
-        }      
+        }  
+          
     }
-    
+    .rokan-vertical-menu:hover{
+        background: @cl-hover;
+    }
     .hidden-sticky{
         flex: 1;
         .menu>li:hover .submenu{
@@ -1571,7 +1577,7 @@ footer{
     .product-sold{
         .ruler-sold{
             margin-bottom: 9px;
-            background: @white;
+            background: #ebebeb;
             height: 8px;
             width: 90%;
             border-radius: 2rem;
@@ -1680,9 +1686,6 @@ footer{
             border-radius: 50%;
             color: #666;
 
-        }
-        a{
-            margin-left: 1.6rem;
         }
         a:hover::before{
             background: @cl-hover;
