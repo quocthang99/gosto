@@ -128,7 +128,7 @@ a{
                     font-size: 1.4rem;
                     line-height: 2;
                 }
-                .item-verticalmenu:hover{
+                .list-verticalmenu:hover{
                     color: @cl-hover;
                 }
             }
@@ -277,7 +277,6 @@ a{
     border-top: 1px solid @color-border;
     .content-center-menu{
         .flex;
-        padding: 1.1rem 0;
         position: relative;
         align-items: center;
         @media(max-width: 1199px){
@@ -296,15 +295,22 @@ a{
                 color: @text-color-header;
                 font-weight: 500;
                 cursor: pointer;
-                margin-left: 3rem;
+                padding: 1.1rem 0px;
+                padding-left: 3rem;
                 span{
                     font-size: 2.4rem;
                     margin-right: 8px;
                 }
             }
+            .title-category-dropdown hide::before{
+                content: "\e9b9";
+                font-size: 2.4rem;
+                margin-right: 8px;
+                font-family: 'icon-dukamarket'
+            }
             .title-category-dropdown:hover{
                 color: @white;
-                
+                background: @cl-hover;
             }
             .verticalmenu{
                 width: 100%;
@@ -312,7 +318,7 @@ a{
                 background: @white;
                 position: absolute;
                 z-index: 3;
-                top: calc(100% + 1.1rem);
+                top: calc(100% + 0);
                 display: none;
                 padding-left: 2rem;
                 .list-verticalmenu{
@@ -407,9 +413,6 @@ a{
             }
         }  
           
-    }
-    .rokan-vertical-menu:hover{
-        background: @cl-hover;
     }
     .hidden-sticky{
         flex: 1;
